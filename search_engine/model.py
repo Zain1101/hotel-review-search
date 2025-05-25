@@ -9,7 +9,7 @@ from sentence_transformers import SentenceTransformer
 device = "cpu"
 
 #Converts sentences into numerical vector embeddings
-#we have use all-MiniLM-L6-v2 model which is small, fast, and effective for semantic similarity
+#uses all-MiniLM-L6-v2 model which is small, fast, and effective for semantic similarity
 embedder = SentenceTransformer('all-MiniLM-L6-v2', device=device)
 
 #Sentiment Classifier

@@ -4,15 +4,13 @@ from .model import embed_text
 
 def search_reviews(df, query, sentiment_filter="POSITIVE", top_k=100, similarity_threshold=0.6):
     """
-    Perform semantic search using faiss with L2 eucledian distance.
-
+    it will Perform semantic search using faiss with L2 eucledian distance.
     Its parameters are:
-        DataFrame: dataset containing review embeddings and sentiments.
+        Dataset
         query: User input.
         sentiment_filter: Filter by sentiment label
         top_k : Maximum number of results to return.
         similarity_threshold : Distance threshold (lower is more similar).
-
     Tt returns:
         results: List of relevant review rows.
     """

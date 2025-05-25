@@ -14,8 +14,8 @@ from search_engine.model import predict_sentiment
 from search_engine.search import search_reviews
 from search_engine.image_fetcher import get_hotel_image_url
 
-API_KEY = os.getenv("GOOGLE_API_KEY")
-CSE_ID = os.getenv("GOOGLE_CSE_ID")
+API_KEY = os.getenv("GOOGLE_API_KEY") #replace this os.getenv("GOOGLE_API_KEY") with your custom search API key
+CSE_ID = os.getenv("GOOGLE_CSE_ID")     # and os.getenv("GOOGLE_API_KEY") with your  CSE_ID
 
 #page setup
 st.set_page_config(page_title="Hotel Review Finder", layout="wide")
