@@ -3,6 +3,8 @@
 This is a semantic search web application built with **Streamlit**, allowing users to search hotel reviews using natural language queries. The system uses **FAISS** for fast similarity search and **transformer models** for embedding and sentiment classification.
 
 ---
+##Streamlit app 
+- https://hotel-review-search-k4fxpag5mnfsd98tjyrqe3.streamlit.app/
 
 ##  Features
 
