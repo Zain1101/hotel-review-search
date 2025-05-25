@@ -19,7 +19,7 @@ This is a semantic search web application built with **Streamlit**, allowing use
 
 ##  Requirements
 
-- Python 3.8+
+- Python 3.10
 - See [`requirements.txt`](./requirements.txt)
 
 ---
