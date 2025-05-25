@@ -9,3 +9,4 @@ faiss-cpu
 pandas
 numpy==1.26.4
 tqdm
+python-dotenv
