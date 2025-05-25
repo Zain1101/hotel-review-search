@@ -6,7 +6,8 @@ This is a semantic search web application built with **Streamlit**, allowing use
 ##Streamlit app 
 - https://hotel-review-search-k4fxpag5mnfsd98tjyrqe3.streamlit.app/
 
-##  Features
+---
+##Features
 
 -  Semantic search using sentence-transformer embeddings  
 -  Auto sentiment detection on query  
