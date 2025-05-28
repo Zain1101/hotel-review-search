@@ -14,6 +14,19 @@ def search_reviews(df, query, sentiment_filter="POSITIVE", top_k=100, similarity
     Tt returns:
         results: List of relevant review rows.
     """
+    #Check if query contains any known city
+    query_lower = query.lower()
+    city_list = df['City'].dropna().astype(str).str.lower().unique()
+    
+    matched_city = None
+    for city in city_list:
+        if city in query_lower:
+            matched_city = city
+            break
+
+    #filter dataset by city if detected
+    if matched_city:
+        df = df[df['City'].str.lower() == matched_city]
 
     #build FAISS index on review vectors
     review_vectors = np.vstack(df['embeddings'].values).astype('float32')
